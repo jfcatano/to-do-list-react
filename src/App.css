@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul: #00b4d8;
+    --verde: #09a129;
+    --azul-hover: #48cae4;
+    --rojo-hover: #e5383b;
+    --gold-hover: gold;
+}
+
+body {
+    font-family: Poppins;
+    background: linear-gradient(to right, #8e44ad, #c0392b);
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* BEM Methodology | Block - Element - Modifier */
+
+/* todo-card block */
+
+.todolist__card {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    border-radius: 15px;
+    width: 700px;
+    background-color: white;
+}
+
+.todolist__card h1 {
+    text-align: center;
+}
+
+/* Estilos para el bloque todos-counter */
+
+.todolist__counter {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.todolist__counter h3 {
+    font-weight: 500;
+}
+
+.todolist__counter span {
+    color: #f29559;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+/* todo-item  block  */
+
+.todolist__list {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.todolist__item {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.todolist__item span {
+	overflow: hidden;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+/* complete item */
+
+.todolist__item-complete {
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+    border: 2px solid var(--verde);
+    cursor: pointer;
+}
+
+/* complete item modifier */
+
+.todolist__item-complete--active {
+    background-color: var(--verde);
+}
+
+/* completed-task */
+
+.todolist_update-input-dashed {
+    text-decoration: line-through;
+}
+
+/* todolist__form */
+
+.todolist__form {
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+/* newtask__input */
+
+.todolist__newtask-input {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    flex: 1;
+    font-family: inherit;
+    font-size: 17px;
+    color: #555;
+}
+
+/* newtask__button */
+
+.todolist__newtask-button {
+    border: none;
+    background-color: var(--azul);
+    color: #fff;
+    padding: 5px 40px;
+    border-radius: 20px;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.todolist__newtask-button:hover {
+    background-color: var(--azul-hover);
+}
+
+/* update__form block */
+
+.todolist__update-form {
+	flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* update__input */
+
+.todolist__update-input {
+    border: none;
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 18px;
+    color: #555;
+    width: 100%;
+    outline: none;
+}
+
+/* update button */
+
+.todolist__update-button {
+    border: none;
+    background-color: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 17px;
+    transition: all 0.3s;
+}
+
+.todolist__update-button:hover {
+    background-color: var(--gold-hover);
+}
+
+/* delete button */
+
+.todolist__delete-button {
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+    border-radius: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.todolist__delete-button:hover {
+    background-color: var(--rojo-hover);
+}
+

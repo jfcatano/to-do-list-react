@@ -12,7 +12,7 @@ function App() {
         handleCompleteTask,
         handleUpdateTask,
         tasks,
-        taskCount,
+        completedTasks,
         pendingTasks,
     } = useTask();
 
@@ -22,7 +22,7 @@ function App() {
                 <h1>To Do List</h1>
                 <div className="todolist__counter">
                     <h3>
-                        Completed tasks: <span>{taskCount}</span>
+                        Completed tasks: <span>{completedTasks}</span>
                     </h3>
                     <h3>
                         Pending tasks: <span>{pendingTasks}</span>

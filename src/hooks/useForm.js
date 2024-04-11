@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export const useForm = (initialForm = {}) => {
+export const useForm = (initialForm = {} ) => {
     
 	const [formState, setFormState] = useState(initialForm);
 
@@ -14,6 +14,7 @@ export const useForm = (initialForm = {}) => {
 		});
 	};
 
+	// Reset form to initial state (void)
 	const onResetForm = () => {
 		setFormState(initialForm);
 	};

@@ -23,7 +23,7 @@ This is a small To Do List project developed using React.
 - If you use ``npm run build`` open the /dist/index.html file.
 
 ## Project information
-* I have do the deployment of the project. You can view this project in the web, this is the url: https://todolist-project.amjor.shop/
+* I have do the deployment of the project. You can view this project in the web, this is the url: [https://todolist-project.amjor.shop/]([https://www.misitio.com](https://todolist-project.amjor.shop/)){:target="_blank"}
 * Deployment using Linux VPS and nginx web server.
 
 # Thanks
